@@ -1086,7 +1086,7 @@ footer a {
 	position: relative;
     margin: 100px auto;
 	width: 70%;
-	height: 50%;
+	height: 250px;
 	background: linear-gradient(0deg, #000, #272727);
     display: flex;
     justify-content: center;
