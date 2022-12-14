@@ -917,6 +917,11 @@ header a:hover {
     -ms-transition: var(--main-transition) ease;
     -o-transition: var(--main-transition) ease;
 }
+@media (max-width: 991PX) {
+    .items .filter .active {
+        background-color: var(--main-color);
+    }
+}
 
 .items .filter a:hover {
     background-color: var(--main-color);
@@ -928,10 +933,69 @@ header a:hover {
     gap: 20px 50px;
 }
 
-@media (max-width: 600px) {
+.arts {
+    display: flex;
+    padding: 30px;
+    background: #282b2f;
+    border: 1px solid #404245;
+    gap: 30px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+@media (max-width: 601px) {
+    .arts {
+        flex-direction: column;
+    }
+
+    .arts .details > div {
+        text-align: center; 
+    }
+
+    .arts .image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .arts .details div:nth-child(2) {
+        flex-direction: column;
+    }
+
+    .arts a {
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 500px) {
     .items .box {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
+}
+
+.arts img {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.arts .details {
+    flex: 1;
+    align-items: center;
+
+}
+
+.arts a {
+    color: var(--main-color);
+    font-size: 15px;
+    border-bottom: 1px solid;
+    text-transform: capitalize;
 }
 
 .items .details > div:last-of-type {
@@ -1485,29 +1549,11 @@ footer a {
 }
 
 /* End Author User Info Section */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Start Animation */
 
 
 
 /* End Animation */
-
 
 .block {
 	position: relative;
@@ -1561,8 +1607,6 @@ footer a {
 .block:after {
 	filter: blur(50px);
 }
-
-
 
 .no-content {
     background-color: #000;
