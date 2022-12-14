@@ -1549,6 +1549,93 @@ footer a {
 }
 
 /* End Author User Info Section */
+/* Start Create Yours Form Section */
+
+.form-con {
+    background: url(../imgs/dark-bg.jpg);
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.form-con form {
+    padding: 60px 30px;
+    background: #37393c;
+    border: 1px solid #404245;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.form-con form .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+    .form-con form .row {
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .form-con form input {
+        width: 100% !important;
+    }
+
+    .form-con form .row div {
+        width: 100% !important;
+    }
+}
+
+.form-con form .row div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 31%;
+}
+
+.form-con form .row:nth-child(2) div {
+    width: 49%;
+}
+
+.form-con form .row div label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.form-con form .row div input[type="text"] {
+    padding: 0 15px;
+    background: #282b2f;
+    outline: none;
+    color: #fff;
+    height: 46px;
+    border: 1px solid #404245;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.form-con form .row div input[type="text"]::placeholder {
+    color: #afafaf;
+    text-transform: lowercase;
+}
+
+.form-con form .row input[type="submit"] {
+    width: 70%;
+    cursor: pointer;
+} 
+
+.margin-t {
+    margin-top: 80px;
+}
+
+/* End Create Yours Form Section */
 /* Start Animation */
 
 
